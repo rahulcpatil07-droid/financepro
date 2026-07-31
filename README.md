@@ -196,6 +196,20 @@ The script wraps the web app in a native Android shell and compiles a debug APK 
 
 ---
 
+## Download the Android APK
+
+A pre-built Android APK is available for direct download:
+
+**Download page:** https://sites.super.myninja.ai/b48cef03-62f5-43a2-94a4-1a4440b7d4fe/78f45c9a/index.html
+
+The download page uses a JavaScript blob mechanism to ensure the APK downloads
+correctly on mobile browsers (instead of rendering as raw text). After
+downloading, open the file and allow "Install from unknown sources" if prompted.
+
+Demo login: `admin@financepro.com` / `admin123`
+
+---
+
 ## License
 
 Personal project — © 2026 Rahul Patil. All rights reserved.
