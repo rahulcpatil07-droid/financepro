@@ -1,0 +1,18 @@
+{
+  "name": "financepro-android-build",
+  "version": "1.0.0",
+  "description": "Capacitor project to build the FinancePro web app into an Android APK",
+  "scripts": {
+    "add:android": "npx cap add android",
+    "sync": "npx cap sync android",
+    "build:apk": "cd android && ./gradlew assembleDebug --no-daemon --console=plain",
+    "build:release": "cd android && ./gradlew assembleRelease --no-daemon --console=plain"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.6.8",
+    "@capacitor/core": "^7.6.8"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.6.8"
+  }
+}

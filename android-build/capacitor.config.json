@@ -1,0 +1,8 @@
+{
+  "appId": "com.financepro.app",
+  "appName": "FinancePro",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": true
+  }
+}
