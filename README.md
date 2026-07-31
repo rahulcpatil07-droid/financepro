@@ -122,6 +122,41 @@ flutter build apk                  # release APK
 
 ---
 
+## 📱 Android APK Build
+
+The web app can be packaged into an installable Android APK using **Capacitor**. The `android-build/` directory contains everything needed:
+
+```
+android-build/
+  build-apk.sh            # One-command automated build script
+  capacitor.config.json   # Capacitor config (appId, appName, webDir)
+  package.json            # Capacitor dependencies
+  .gitignore              # Excludes generated build artifacts
+```
+
+### Quick Build
+
+```bash
+export ANDROID_HOME=/opt/android-sdk
+export JAVA_HOME=/opt/jdk21
+cd android-build && ./build-apk.sh
+```
+
+The script wraps the web app in a native Android shell and compiles a debug APK (~3.9 MB). See **`APK_BUILD.md`** for full environment setup, troubleshooting, and release-signing instructions.
+
+### APK Details
+
+| Property | Value |
+|---|---|
+| App name | FinancePro |
+| Package ID | com.financepro.app |
+| Version | 1.0 |
+| Min Android | 6.0 (API 23) |
+| Target SDK | 35 (Android 15) |
+| Size | ~3.9 MB |
+
+---
+
 ## Repository Layout
 
 ```
