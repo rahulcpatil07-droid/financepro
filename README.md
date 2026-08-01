@@ -200,11 +200,12 @@ The script wraps the web app in a native Android shell and compiles a debug APK 
 
 A pre-built Android APK is available for direct download:
 
-**Download page:** https://sites.super.myninja.ai/b48cef03-62f5-43a2-94a4-1a4440b7d4fe/78f45c9a/index.html
+**Download page:** https://sites.super.myninja.ai/b48cef03-62f5-43a2-94a4-1a4440b7d4fe/dcdab1d7/index.html
 
-The download page uses a JavaScript blob mechanism to ensure the APK downloads
-correctly on mobile browsers (instead of rendering as raw text). After
-downloading, open the file and allow "Install from unknown sources" if prompted.
+The download page fetches the APK (hosted as a `.bin` file to get the correct
+`application/octet-stream` content-type) and saves it to your device as
+`FinancePro-v1.0.apk` with the proper Android MIME type. This ensures the APK
+downloads correctly on all mobile browsers instead of rendering as raw text.
 
 Demo login: `admin@financepro.com` / `admin123`
 
